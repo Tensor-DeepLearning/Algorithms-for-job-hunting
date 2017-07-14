@@ -23,3 +23,59 @@
 >>> |[BubbleSort.h](./code/BubbleSort.h) | `冒泡排序`|
 >>> | ... | |
 ### <a id="maintenance"> 维护规则： </a>
+	1、名字空间:<br>
+		小组成员编写的算法类，请包含在自己的名字空间中，以免命名冲突；<br>
+	2、添加现有算法不同版本:<br>
+		当需要对项目中已有的算法文件，添加自己的算法版本时，请在自己的名字空间中，以大写字母'C'+'文件名'声明类，
+		并在类中实现自己的算法，另外需要实现一个静态的测试接口 test()；<br>
+		eg. 成员 FreshMem 需要添加自己的[`冒泡排序`](./code/BubbleSort.h)版本：
+		
+		```  C++
+			\\BubbleSort.h   //文件名.h
+			namespace FreshMem
+			{
+				class CBubbleSort  //类名 C + 文件名 
+	            {
+					void BubbleSort()
+					{
+						//具体算法类;
+					}
+
+				}
+
+				static void test()   //静态测试函数接口，方便在main中调用，调试;
+				{
+					//具体测试代码;
+				}
+			};	
+
+		```
+
+	3、添加新算法:<br>
+		当需要添加新算法时，请创建对应算法名的头文件，并以2中的规则添加名字空间以及类；<br>
+		同时，请在[Args.h](./code/Algs.h)中引用该头文件，并加以简单的注释说明;
+	<br>
+	
+	4、main中调用对应的算法：<br>
+		直接调用对应名字空间中需要的算法test函数;<br>
+		为了方便测试，这里可以通过设置输入重定向开关'REIOS'，设置从文档读取测试用例，或从控制台读取;
+		如果想要冲文档中读取，请在[TestExample.txt](./TestExample.txt)中按照代码需求编辑对应的测试用例;
+		eg. 调用Chirl的第一题算法：<br>
+	``` C++
+	//main.cpp中
+	#include "Algs.h"
+	int main(int argc, char **argv)
+	{
+	#define REIOS 1  //输入重定向开关，1 重定向到根目录下"TestExample.txt"文件中;
+                     //                0 从控制台输入;   
+		//....
+		
+		Chirl::CBubbleSort::test();
+		
+		//...
+		return 0;
+			}
+	```
+	
+### 项目相关问题：
+    - 请联系 ：ChirlChen@163.com
