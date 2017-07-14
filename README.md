@@ -10,12 +10,16 @@
   - Linux：
 
 ### 目录结构：
-> #### $# Algorithm-for-job-hunting$  `项目根目录` 
->> [main.cpp](.\main.cpp) 
->> [TestExample.txt](.\TestExample.txt)   `测试用例文件，输入重定向后读取的文件;`
->>  ... 
->> #### $#code$  `算法源代码目录，用于放置所有算法代码`
->>> [Algs.h](.\code\Algs.h)   `用于include所有算法的头文件`
->>> [BubbleSort.h](.\code\BubbleSort.h) 
-
+> #### Algorithm-for-job-hunting  `项目根目录` 
+>> | 文件名 | 说明 |
+>> | :------| :----|
+>> |[main.cpp](.\main.cpp) | |
+>> |[TestExample.txt](.\TestExample.txt) |  `测试用例文件，输入重定向后读取的文件;`|
+>> | ...| | 
+>> #### code  `算法源代码目录，用于放置所有算法代码`
+>>> | 文件名 | 说明 |
+>>> | :------| :----|
+>>> |[Algs.h](.\code\Algs.h) |  `用于include所有算法的头文件`|
+>>> |[BubbleSort.h](.\code\BubbleSort.h) | `冒泡排序`|
+>>> | ... | |
 ### <span id='maintenance'> 维护规则： </span>
