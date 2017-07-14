@@ -60,8 +60,6 @@ namespace Chirl
                 10
                 51 49 18 93 6 23 13 55 19 1
             ******************************/
-            
-            CBubbleSort su;
             int len = 0;
             vector<int> arr;
             cout << "Please input the length of arr:" << endl;
@@ -76,6 +74,7 @@ namespace Chirl
                 arr.push_back(tmp);
             }
 
+            CBubbleSort su;
             su.BubbleSort(arr);
 
             cout << "Sorted array: " ;

@@ -2,10 +2,10 @@
 
 ### 项目说明：
   - 本项目用于小组成员维护`在找工作中遇到的常用算法`，用以总结以及分享学习经验,也便于大家对知识的回顾。
-  - 关于项目编译请参考[`编译说明`](#build);
-  - **参与项目维护前**，请参阅[`维护规则`](#maintenance);
+  - 关于项目编译请参考[`编译说明`](#build "build");
+  - **参与项目维护前**，请参阅[`维护规则`](#maintenance "maintenance");
        
-### <span id='build'> 编译说明： </span>
+### <a id="build"> 编译说明： </a>
   - Windows：
   - Linux：
 
@@ -22,4 +22,4 @@
 >>> |[Algs.h](./code/Algs.h) |  `用于include所有算法的头文件`|
 >>> |[BubbleSort.h](./code/BubbleSort.h) | `冒泡排序`|
 >>> | ... | |
-### <span id='maintenance'> 维护规则： </span>
+### <a id="maintenance"> 维护规则： </a>
