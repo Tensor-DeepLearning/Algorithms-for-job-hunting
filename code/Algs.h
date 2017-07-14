@@ -20,7 +20,7 @@
 #define _ALGS_H_
 
 #include "BubbleSort.h"    //冒泡排序;
-
+#include "InsertSort.h"    //插入排序;
 
 
 
