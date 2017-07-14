@@ -1,5 +1,5 @@
 ﻿/************************************************
-  FileName    : Algs.h           ;
+  FileName    : Algs.h                          ;
   Description : 算法头文件总集，请在此引用所有个;
                 人算法的头文件                  ;
   Creator     : Chirl                           ;
@@ -19,7 +19,7 @@
 #ifndef _ALGS_H_
 #define _ALGS_H_
 
-
+#include "BubbleSort.h"    //冒泡排序;
 
 
 

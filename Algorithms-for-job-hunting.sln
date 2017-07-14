@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithms-for-job-hunting", "Algorithms-for-job-hunting.vcxproj", "{405058EF-E7D6-48CE-B91E-B996E86C8F33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0ABFA6F6-7488-47B1-B59A-AD45DE9C80B3}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		TestExample.txt = TestExample.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{405058EF-E7D6-48CE-B91E-B996E86C8F33}.Debug|Win32.ActiveCfg = Debug|Win32
+		{405058EF-E7D6-48CE-B91E-B996E86C8F33}.Debug|Win32.Build.0 = Debug|Win32
+		{405058EF-E7D6-48CE-B91E-B996E86C8F33}.Release|Win32.ActiveCfg = Release|Win32
+		{405058EF-E7D6-48CE-B91E-B996E86C8F33}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
