@@ -28,10 +28,10 @@
 
 **2、添加现有算法不同版本:** <br>
 	当需要对项目中**已有的算法文件**，添加自己的算法版本时，请在自己的名字空间中，以大写字母'C'+'文件名'声明类，并在类中实现自己的算法，另外需要实现一个**静态的测试接口 test()**；<br>
-	eg. 成员 FreshMem 需要添加自己的[`冒泡排序`](./code/BubbleSort.h)版本：
+	eg. 成员 FreshMan 需要添加自己的[`冒泡排序`](./code/BubbleSort.h)版本：
 ```  C++
 	//BubbleSort.h   //文件名.h
-	namespace FreshMem  //FreshMen 的名字空间
+	namespace FreshMan  //FreshMan 的名字空间
 	{
 		class CBubbleSort  //类名 = C + BubbleSort (文件名) 
         {
