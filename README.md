@@ -34,18 +34,17 @@
 	namespace FreshMem  //FreshMen 的名字空间
 	{
 		class CBubbleSort  //类名 = C + BubbleSort (文件名) 
-           {
+        {
 			void BubbleSort()
 			{
 				//具体算法类;
 			}
 
-		}
-
-		static void test()   //静态测试函数接口，方便在main中调用，调试;
-		{
-			//具体测试代码;
-		}
+			static void test()   //静态测试函数接口，方便在main中调用，调试;
+			{
+				//具体测试代码;
+			}
+		};
 	};	
 
 ```
