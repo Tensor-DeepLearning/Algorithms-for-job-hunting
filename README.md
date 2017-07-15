@@ -1,4 +1,4 @@
-# Algorithms-for-job-hunting
+﻿# Algorithms-for-job-hunting
 
 ### 项目说明：
   - 本项目用于小组成员维护`在找工作中遇到的常用算法`，用以总结以及分享学习经验,也便于大家对知识的回顾。

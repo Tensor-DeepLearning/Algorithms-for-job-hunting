@@ -40,7 +40,11 @@ int main(int argc, char **argv)
 #if REIOS
     cin.rdbuf(backup);
 #endif
+
+#if _WIN32
     system("pause");
+#endif
+    
     return 0;
 }
 
