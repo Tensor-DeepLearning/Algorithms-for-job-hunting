@@ -60,14 +60,15 @@ namespace Chirl
                 10
                 51 49 18 93 6 23 13 55 19 1
             ******************************/
+            
             int len = 0;
             vector<int> arr;
-            cout << "Please input the length of arr:" << endl;
-            cin >> len;
+            cout << "Please input the length of arr:" << endl;   
+            cin >> len;                     //读取数组长度;
 
             cout << "Please input your array to sort:" << endl;
-            arr.reserve(len);
-            for (int i = 0; i < len; ++i)
+            arr.reserve(len); 
+            for (int i = 0; i < len; ++i)   //读取输入的随机数组;
             {
                 int tmp = 0;
                 cin >> tmp;
@@ -75,9 +76,9 @@ namespace Chirl
             }
 
             CBubbleSort su;
-            su.BubbleSort(arr);
+            su.BubbleSort(arr);              //调用排序算法;
 
-            cout << "Sorted array: " ;
+            cout << "Sorted array: " ;       //输出排序结果;
             for (auto itr = arr.begin(); itr != arr.end(); ++itr)
             {
                 cout << *itr << " ";
