@@ -7,7 +7,9 @@
        
 ### <a id="build"> 编译说明： </a>
   - Windows：
+     - None
   - Linux：
+     - None
 
 ### 目录结构：
 > #### Algorithm-for-job-hunting  `项目根目录` 
