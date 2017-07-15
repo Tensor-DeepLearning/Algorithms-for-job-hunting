@@ -9,7 +9,8 @@
   - Windows：
      - None
   - Linux：
-     - None
+     - 在根目录打开终端运行指令：g++ -std=c++11 main.cpp -o Algs
+     - 生成可执行文件 Algs，然后直接在终端输入 ./Algs 即可看到算法运行结果
 
 ### 目录结构：
 > #### Algorithm-for-job-hunting  `项目根目录` 
