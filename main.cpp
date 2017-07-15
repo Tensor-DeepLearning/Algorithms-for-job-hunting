@@ -19,7 +19,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "./code/Algs.h"
+#include "./src/Algs.h"
 
 using namespace std;
 
