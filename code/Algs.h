@@ -19,10 +19,15 @@
 #ifndef _ALGS_H_
 #define _ALGS_H_
 
-#include "BubbleSort.h"    //冒泡排序;
-#include "InsertSort.h"    //插入排序;
+/*************************************          
+ *         Algorithm  List           *
+ *************************************/
 
-
+/*********Sorting Algs****************/
+#include "BubbleSort.h"         //冒泡排序;
+#include "InsertSort.h"         //插入排序;
+#include "SelectionSort.h"      //二分插入排序;
+#include "CocktailSort.h"       //鸡尾酒排序;
 
 
 

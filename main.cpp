@@ -35,7 +35,7 @@ int main(int argc, char **argv)
     cin.rdbuf(fin.rdbuf());
 #endif
 
-    Chirl::CInsertSort::test();
+    Chirl::CCocktailSort::test();
 
 #if REIOS
     cin.rdbuf(backup);
