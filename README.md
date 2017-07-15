@@ -19,11 +19,11 @@
 >> |[main.cpp](./main.cpp) | |
 >> |[TestExample.txt](./TestExample.txt) |  测试用例文件，输入重定向后读取的文件 <br>注意：当用到此文件，需要针对不同算法输入需求，做对应的用例设置|
 >> | ...| | 
->> #### code  `算法源代码目录，用于放置所有算法代码`
+>> #### src  `算法源代码目录，用于放置所有算法代码`
 >>> | 文件名 | 说明 |
 >>> | :------| :----|
->>> |[Algs.h](./code/Algs.h) |  用于include所有算法的头文件,可通过该文件查询已实现的算法目录|
->>> |[BubbleSort.h](./code/BubbleSort.h) | 冒泡排序|
+>>> |[Algs.h](./src/Algs.h) |  用于include所有算法的头文件,可通过该文件查询已实现的算法目录|
+>>> |[BubbleSort.h](./src/BubbleSort.h) | 冒泡排序|
 >>> | ... | |
 ### <a id="maintenance"> 维护规则： </a>
 **1、名字空间:** <br>
@@ -31,7 +31,7 @@
 
 **2、添加现有算法不同版本:** <br>
 	当需要对项目中**已有的算法文件**，添加自己的算法版本时，请在自己的名字空间中，以大写字母'C'+'文件名'声明类，并在类中实现自己的算法，另外需要实现一个**静态的测试接口 test()**；<br>
-	eg. 成员 FreshMan 需要添加自己的[`冒泡排序`](./code/BubbleSort.h)版本：
+	eg. 成员 FreshMan 需要添加自己的[`冒泡排序`](./src/BubbleSort.h)版本：
 ```  C++
 //BubbleSort.h   //文件名.h
 
@@ -65,7 +65,7 @@ namespace FreshMan         //FreshMan 的名字空间
 ```
 **3、test接口:** <br>
 	**功能：** test接口主要用于读取算法的测试数据，以及调用对应的算法；<br>
-	**注意：** 为方便输入重定向后，在[TestExample.txt](./TestExample.txt)编辑测试用例，请在test接口合适位置放置一个测试用例，或则对本算法的输入格式进行清晰的描述(可参照[BubbleSort.h](./code/BubbleSort.h)中的test写法);
+	**注意：** 为方便输入重定向后，在[TestExample.txt](./TestExample.txt)编辑测试用例，请在test接口合适位置放置一个测试用例，或则对本算法的输入格式进行清晰的描述(可参照[BubbleSort.h](./src/BubbleSort.h)中的test写法);
 ``` C++
 //test接口简单示例;
 static void test()
@@ -80,7 +80,7 @@ static void test()
 
 ``` 
 **4、添加新算法:** <br>
-	当需要添加新算法时，请创建**对应算法名的头文件**，并以2中的规则添加名字空间以及类；同时，请在[Args.h](./code/Algs.h)中**引用该头文件**，并加以简单的注释说明;
+	当需要添加新算法时，请创建**对应算法名的头文件**，并以2中的规则添加名字空间以及类；同时，请在[Args.h](./src/Algs.h)中**引用该头文件**，并加以简单的注释说明;
 
 **5、main中调用对应的算法：** <br>
 	直接调用对应名字空间中需要的算法test函数;<br>
