@@ -32,7 +32,7 @@
 ```  C++
 //BubbleSort.h   //文件名.h
 
-//文件描述等...
+//文件描述、头文件引用等...
 
 namespace Chirl  //成员Chirl的冒泡排序版本;
 {
@@ -43,18 +43,18 @@ namespace Chirl  //成员Chirl的冒泡排序版本;
 };
 
 
-namespace FreshMan  //FreshMan 的名字空间
+namespace FreshMan         //FreshMan 的名字空间
 {
 	class CBubbleSort  //类名 = C + BubbleSort (文件名) 
         {
 		void BubbleSort()
 		{
-			//具体算法类;
+			   //具体算法类;
 		}
 
 		static void test()   //静态测试函数接口，方便在main中调用，调试;
 		{
-			//具体测试代码;
+			  //具体测试代码;
 		}
 	};
 };	
@@ -74,8 +74,8 @@ namespace FreshMan  //FreshMan 的名字空间
 #include "Algs.h"
 int main(int argc, char **argv)
 {
-#define REIOS 1  //输入重定向开关，1 重定向到根目录下"TestExample.txt"文件中;
-                    //                0 从控制台输入;   
+#define REIOS 1  //输入重定向开关, 1 重定向到根目录下"TestExample.txt"文件中;
+                 //               0 从控制台输入;   
 	//....
 	
 	Chirl::CBubbleSort::test();   //通过指定名字空间(Chirl)选择不同成员的算法;
