@@ -27,18 +27,30 @@ int main(int argc, char **argv)
 {
 #define REIOS 1  //输入重定向开关，1 重定向到根目录下"TestExample.txt"文件中;
                  //                0 从控制台输入;   
-#if REIOS
-    streambuf *backup;
+#if REIOS  
+    streambuf *backup = NULL;
     ifstream fin;
     fin.open("TestExample.txt");
-    backup = cin.rdbuf();
-    cin.rdbuf(fin.rdbuf());
+    if (fin.is_open())
+    {
+        backup = cin.rdbuf();
+        cin.rdbuf(fin.rdbuf());
+    }
+    else
+        cerr << "<Warning:>"
+                "\n\t The file \"TestExample.txt\" is not exist in current folder!" 
+                "\n\t Please input your test example from the console!"<< endl;
 #endif
 
-    Chirl::CCocktailSort::test();
+
+    //算法调用;
+    Chirl::CSPFA::test();
 
 #if REIOS
-    cin.rdbuf(backup);
+    if (fin.is_open())
+    {
+        cin.rdbuf(backup);
+    }
 #endif
 
 #if _WIN32

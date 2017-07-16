@@ -26,10 +26,12 @@
 /*********Sorting Algs****************/
 #include "BubbleSort.h"         //冒泡排序;
 #include "InsertSort.h"         //插入排序;
-#include "SelectionSort.h"      //二分插入排序;
+#include "SelectionSort.h"      //选择排序;
 #include "CocktailSort.h"       //鸡尾酒排序;
 
-
+/*********Path finding Algs***********/
+#include "Dijkstra.h"           //迪杰斯特拉寻路算法;
+#include "SPFA.h"               //spfa算法;
 
 
 #endif //!_Algs_H_

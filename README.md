@@ -52,7 +52,7 @@ namespace FreshMan         //FreshMan 的名字空间
         {
 		void BubbleSort()
 		{
-			   //具体算法类;
+			   //具体算法;
 		}
 
 		static void test()   //静态测试函数接口，方便在main中调用，调试;
