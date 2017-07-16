@@ -47,7 +47,7 @@ namespace Chirl
             }
         }SEdge;
 
-        const static int INF = 0xFFFFFFF;
+        enum {INF = 0xFFFFFFF};
 
         vector<int> GetPath(vector<int> paths, int s, int e)
         {

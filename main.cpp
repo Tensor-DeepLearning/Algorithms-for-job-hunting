@@ -44,7 +44,7 @@ int main(int argc, char **argv)
 
 
     //算法调用;
-    Chirl::CSPFA::test();
+    Chirl::CDijkstra::test();
 
 #if REIOS
     if (fin.is_open())
