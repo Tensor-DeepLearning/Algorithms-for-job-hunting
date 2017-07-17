@@ -23,7 +23,6 @@
 #include <queue>
 
 using namespace std;
-const int NONE   =   -1;
 namespace Chirl
 {
     /************************************************************************
@@ -47,7 +46,7 @@ namespace Chirl
             }
         }SEdge;
 
-        enum {INF = 0xFFFFFFF};
+        enum {INF = 0xFFFFFFF, NONE = -1};
 
         vector<int> GetPath(vector<int> paths, int s, int e)
         {
@@ -55,7 +54,7 @@ namespace Chirl
             path.reserve(paths.size());
 
             int curIdx = e;
-            while (curIdx != -1)
+            while (curIdx != NONE)
             {
                 path.push_back(curIdx);
                 curIdx = paths[curIdx];
@@ -79,7 +78,7 @@ namespace Chirl
             vector<char> openFlag(adjList.size(), 1);
             queue<int> openList; 
             
-            cost[s] = 0; path[s] = -1;
+            cost[s] = 0; path[s] = NONE;
             openList.push(s);
             while (!openList.empty())
             {

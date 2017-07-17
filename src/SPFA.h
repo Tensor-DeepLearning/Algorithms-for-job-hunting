@@ -41,7 +41,7 @@ namespace Chirl
             }
         }SEdge;
 
-       enum {INF = 0xFFFFFFF,};
+        enum {INF = 0xFFFFFFF, NONE = -1};
 
         vector<int> GetPath(vector<int> paths, int s, int e)
         {
@@ -49,7 +49,7 @@ namespace Chirl
             path.reserve(paths.size());
 
             int curIdx = e;
-            while (curIdx != -1)
+            while (curIdx != NONE)
             {
                 path.push_back(curIdx);
                 curIdx = paths[curIdx];
@@ -75,7 +75,7 @@ namespace Chirl
 
             openList.push(s);
             cost[s] = 0;
-            paths[s] = -1;
+            paths[s] = NONE;
 
             while (!openList.empty())
             {
