@@ -28,12 +28,17 @@
 #include "InsertSort.h"         //插入排序;
 #include "SelectionSort.h"      //选择排序;
 #include "CocktailSort.h"       //鸡尾酒排序;
-#include "QuickSort.h"        //快速排序;
+#include "QuickSort.h"          //快速排序;
 
 
 /*********Path finding Algs***********/
 #include "Dijkstra.h"           //迪杰斯特拉寻路算法;
 #include "SPFA.h"               //spfa算法;
+
+
+/*********Binary Tree Operation*******/
+#include "Tree2DList.h"			//二叉树转双向链表;
+
 
 
 #endif //!_Algs_H_
