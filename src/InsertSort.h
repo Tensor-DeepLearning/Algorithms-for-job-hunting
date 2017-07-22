@@ -19,7 +19,7 @@
 #define _INSERTSORT_H_
 #include <iostream>
 #include <vector>
-
+#include "SuperSort.h"
 using namespace std;
 
 namespace Chirl
@@ -28,7 +28,7 @@ namespace Chirl
      思      路： 
      算法复杂度：O(n^2)
      ************************************************************************/
-    class CInsertSort
+    class CInsertSort : public CSuperSort
     {
     public:
         void InsertSort(vector<int> &arr)
@@ -52,35 +52,15 @@ namespace Chirl
 
         }
   
-         static void test()
+        void DoSort(vector<int> &arr)
         {
-            /*********测试用例************
-                10
-                51 49 18 93 6 23 13 55 19 1
-            ******************************/
-            int len = 0;
-            vector<int> arr;
-            cout << "Please input the length of arr:" << endl;
-            cin >> len;
+            InsertSort(arr);
+        }
 
-            cout << "Please input your array to sort:" << endl;
-            arr.reserve(len);
-            for (int i = 0; i < len; ++i)
-            {
-                int tmp = 0;
-                cin >> tmp;
-                arr.push_back(tmp);
-            }
-
-            CInsertSort su;
-            su.InsertSort(arr);
-
-            cout << "Sorted array: " ;
-            for (auto itr = arr.begin(); itr != arr.end(); ++itr)
-            {
-                cout << *itr << " ";
-            }
-            cout << endl;
+        static void test()
+        {
+            CInsertSort obj;
+            obj.DoTest(&obj);
         }
     };
   

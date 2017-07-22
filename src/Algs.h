@@ -29,7 +29,7 @@
 #include "SelectionSort.h"      //选择排序;
 #include "CocktailSort.h"       //鸡尾酒排序;
 #include "QuickSort.h"          //快速排序;
-
+#include "MergeSort.h"          //归并排序;
 
 /*********Path finding Algs***********/
 #include "Dijkstra.h"           //迪杰斯特拉寻路算法;

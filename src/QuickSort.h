@@ -20,7 +20,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-
+#include "SuperSort.h"
 using namespace std;
 
 namespace Chirl
@@ -29,7 +29,7 @@ namespace Chirl
      思      路： 分治(https://en.wikipedia.org/wiki/Quicksort)
      算法复杂度： O(n*lg(n)) ~ O(n^2)
      ************************************************************************/
-    class CQuickSort
+    class CQuickSort : public CSuperSort
     {
     public:
         void QuickSort(vector<int> &arr)
@@ -92,36 +92,15 @@ namespace Chirl
             return hi;
         }
     public:
+        void DoSort(vector<int> &arr)
+        {
+            QuickSort(arr);
+        }
+
         static void test()
         {
-            /*********测试用例************
-                10
-                51 49 18 93 6 23 13 55 19 1
-            ******************************/
-            
-            int len = 0;
-            vector<int> arr;
-            cout << "Please input the length of arr:" << endl;   
-            cin >> len;                     //读取数组长度;
-
-            cout << "Please input your array to sort:" << endl;
-            arr.reserve(len); 
-            for (int i = 0; i < len; ++i)   //读取输入的随机数组;
-            {
-                int tmp = 0;
-                cin >> tmp;
-                arr.push_back(tmp);
-            }
-
-            CQuickSort su;
-            su.QuickSort(arr);              //调用排序算法;
-
-            cout << "Sorted array: " ;       //输出排序结果;
-            for (auto itr = arr.begin(); itr != arr.end(); ++itr)
-            {
-                cout << *itr << " ";
-            }
-            cout << endl;
+            CQuickSort obj;
+            obj.DoTest(&obj);
         }
     };
   

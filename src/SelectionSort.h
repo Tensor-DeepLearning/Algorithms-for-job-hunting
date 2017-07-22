@@ -20,7 +20,7 @@
 
 #include <vector>
 #include <iostream>
-
+#include "SuperSort.h"
 using namespace std;
 
 namespace Chirl
@@ -31,7 +31,7 @@ namespace Chirl
                  到已排序序列的末尾。以此类推，直到所有元素均排序完毕。      ;
      算法复杂度：O(n^2)
      ************************************************************************/
-    class CSelectionSort
+    class CSelectionSort : public CSuperSort
     {
     public:
         void SelectionSort(vector<int> &arr)
@@ -49,35 +49,16 @@ namespace Chirl
             }
         }
   
+    public:
+        void DoSort(vector<int> &arr)
+        {
+            SelectionSort(arr);
+        }
+
         static void test()
         {
-            /*********测试用例************
-                10
-                51 49 18 93 6 23 13 55 19 1
-            ******************************/
-            int len = 0;
-            vector<int> arr;
-            cout << "Please input the length of arr:" << endl;
-            cin >> len;
-
-            cout << "Please input your array to sort:" << endl;
-            arr.reserve(len);
-            for (int i = 0; i < len; ++i)
-            {
-                int tmp = 0;
-                cin >> tmp;
-                arr.push_back(tmp);
-            }
-
-            CSelectionSort su;
-            su.SelectionSort(arr);
-
-            cout << "Sorted array: " ;
-            for (auto itr = arr.begin(); itr != arr.end(); ++itr)
-            {
-                cout << *itr << " ";
-            }
-            cout << endl;
+            CSelectionSort obj;
+            obj.DoTest(&obj);
         }
     };
   
